@@ -1,6 +1,6 @@
 
-              
-            
+   
+                    
 
 def crearFacebook():
     """
@@ -115,15 +115,10 @@ def obtenerMensaje(indice):
                 cadena = (mensajeFinal[2])
     return cadena
 
-
-   """
-Proyecto Bimestral
-Segundo Bimestre
-
-Problemática:
-
-"""
 if __name__ == "__main__":
+
+   
+                 
     print("proceso inicial")
     bandera = True
     while(bandera):
@@ -171,7 +166,6 @@ if __name__ == "__main__":
         if(salida == "si"):
             bandera = False
         
-        print ("Resultado de Campaña es: +\n" + obtenerMensaje) 
-            
+        print ("Resultado de Campaña es: +\n" + obtenerMensaje)       
 
 
