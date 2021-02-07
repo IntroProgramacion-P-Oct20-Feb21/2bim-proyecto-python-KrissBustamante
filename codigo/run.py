@@ -23,26 +23,28 @@ if __name__ == "__main__":
             indice = indice +1
         else:
             if(opcion == 2):
-                crearTwitter()
-                 indice = indice +1
+                Twitter = crearTwitter()
+                indice = indice +1
             else:
                 if(opcion == 3):
                     Whatsapp = crearWhatsapp()
-                     indice = indice +1
+                    indice = indice +1
                 else:
                     if(opcion == 4):
-                        crearTelegram()
-                         indice = indice +1
+                        Telegram = crearTelegram()
+                        indice = indice +1
                     else:
                         if(opcion == 5):
                             Signal = crearSignal()
+                            indice = indice +1
                         else:
                             if(opcion == 6):
-                                crearInstagram()
+                                Instagram = crearInstagram()
+                                indice = indice +1
                             else:
                                 if(opcion == 7):
                                     Flickr = crearFlickr()
-                                     indice = indice +1
+                                    indice = indice +1
                                 else:
                                     print("Opcion incorrecta")
                                     
