@@ -1,60 +1,4 @@
-"""
-Proyecto Bimestral
-Segundo Bimestre
 
-Problemática:
-
-"""
-if __name__ == "__main__":
-    print("proceso inicial")
-    bandera = True
-    while(bandera):
-        
-        print("Ingrese cualquiera de las opciones para crear una cuenta: \n")
-        opcion = int(input("Ingrese 1 para crear una cuenta en Facebook: \n"\
-        "Ingrese 2 para crear una cuenta en Twiter: \n"\
-        "Ingrese 3 para crear una cuenta en Whatsapp: \n"\
-        "Ingrese 4 para crear una cuenta en Telegram: \n"\
-        "Ingrese 5 para crear una cuenta en Signal: \n"\
-        "Ingrese 6 para crear una cuenta en Instagram: \n"\
-        "Ingrese 7 para crear una cuenta en Flickr: \n"))
-        if(opcion == 1):
-            facebook = crearFacebook()
-            indice = indice +1
-        else:
-            if(opcion == 2):
-                Twitter = crearTwitter()
-                indice = indice +1
-            else:
-                if(opcion == 3):
-                    Whatsapp = crearWhatsapp()
-                    indice = indice +1
-                else:
-                    if(opcion == 4):
-                        Telegram = crearTelegram()
-                        indice = indice +1
-                    else:
-                        if(opcion == 5):
-                            Signal = crearSignal()
-                            indice = indice +1
-                        else:
-                            if(opcion == 6):
-                                Instagram = crearInstagram()
-                                indice = indice +1
-                            else:
-                                if(opcion == 7):
-                                    Flickr = crearFlickr()
-                                    indice = indice +1
-                                else:
-                                    print("Opcion incorrecta")
-                                    
-
-        salida = input( "Ingrese (si) si desea salir del ciclo \n" )
-        if(salida == "si"):
-            bandera = False
-        
-        print ("Resultado de Campaña es: +\n" + obtenerMensaje) 
-            
               
             
 
@@ -171,5 +115,63 @@ def obtenerMensaje(indice):
                 cadena = (mensajeFinal[2])
     return cadena
 
+
+   """
+Proyecto Bimestral
+Segundo Bimestre
+
+Problemática:
+
+"""
+if __name__ == "__main__":
+    print("proceso inicial")
+    bandera = True
+    while(bandera):
+        
+        print("Ingrese cualquiera de las opciones para crear una cuenta: \n")
+        opcion = int(input("Ingrese 1 para crear una cuenta en Facebook: \n"\
+        "Ingrese 2 para crear una cuenta en Twiter: \n"\
+        "Ingrese 3 para crear una cuenta en Whatsapp: \n"\
+        "Ingrese 4 para crear una cuenta en Telegram: \n"\
+        "Ingrese 5 para crear una cuenta en Signal: \n"\
+        "Ingrese 6 para crear una cuenta en Instagram: \n"\
+        "Ingrese 7 para crear una cuenta en Flickr: \n"))
+        if(opcion == 1):
+            facebook = crearFacebook()
+            indice = indice +1
+        else:
+            if(opcion == 2):
+                Twitter = crearTwitter()
+                indice = indice +1
+            else:
+                if(opcion == 3):
+                    Whatsapp = crearWhatsapp()
+                    indice = indice +1
+                else:
+                    if(opcion == 4):
+                        Telegram = crearTelegram()
+                        indice = indice +1
+                    else:
+                        if(opcion == 5):
+                            Signal = crearSignal()
+                            indice = indice +1
+                        else:
+                            if(opcion == 6):
+                                Instagram = crearInstagram()
+                                indice = indice +1
+                            else:
+                                if(opcion == 7):
+                                    Flickr = crearFlickr()
+                                    indice = indice +1
+                                else:
+                                    print("Opcion incorrecta")
+                                    
+
+        salida = input( "Ingrese (si) si desea salir del ciclo \n" )
+        if(salida == "si"):
+            bandera = False
+        
+        print ("Resultado de Campaña es: +\n" + obtenerMensaje) 
+            
 
 
