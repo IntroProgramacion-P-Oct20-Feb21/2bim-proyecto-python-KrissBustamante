@@ -105,20 +105,20 @@ def obtenerMensaje(indice):
     explicación de método
     """
     mensajeFinal = ["Campaña con poca afluencia", "Campaña moderada siga adelante", "Excelente campaña"]
-    if(contador >= 1 and contador <= 5):
+    if(indice >= 1 and indice <= 5):
         cadena = (mensajeFinal[0])
     else:
-        if(contador >= 6 and contador <= 15):
+        if(indice >= 6 and indice <= 15):
             cadena = (mensajeFinal[1])
         else:
-            if(contador <= 16):
+            if(indice <= 16):
                 cadena = (mensajeFinal[2])
     return cadena
 
 if __name__ == "__main__":
 
    
-                 
+    indice = 0             
     print("proceso inicial")
     bandera = True
     while(bandera):
@@ -166,6 +166,6 @@ if __name__ == "__main__":
         if(salida == "si"):
             bandera = False
         
-        print ("Resultado de Campaña es: +\n" + obtenerMensaje)       
+        print ("Resultado de Campaña es: +\n" + obtenerMensaje(indice))    
 
 
